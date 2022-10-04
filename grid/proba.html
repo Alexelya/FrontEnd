@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+/*разобраться*/
+    <style>
+      html,
+      body,
+      .wrapper {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+      }
+      
+      aside {
+        background: lightgrey;
+        grid-area: aside;
+      }
+      header {
+        background: coral;
+        grid-area: header;
+      }
+      .conhtent1 {
+        background: lightblue;
+        grid-area: content1;
+      }
+.content2 {
+    background: rgb(70, 21, 21);
+        grid-area: content2;
+}
+footer {
+    background: rgb(39, 23, 63);
+        grid-area: footer;
+}
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 150px 200px 50px;
+        grid-template-rows: 150px 200px 50px auto;
+        grid-template-areas: 
+        "aside content1 content2 footer"
+        "footer footer footer"
+        ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header></header>
+      <aside></aside>
+     <div class="content1"></div>
+     <div class="content2"></div>
+     <footer></footer>
+    </div>
+  </body>
+</html>

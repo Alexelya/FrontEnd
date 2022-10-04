@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+.card {
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.25s ease-out;
+
+}
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__avatar {
+    width: 48px;
+    height: 48px;
+}
+.card__message {
+    font-size: 1.5rem;
+
+}
+.card__message--green {
+    border-bottom: 1px solid green;
+}
+.card__date {
+    text-align: right;
+    color: gray;
+}
+.card:hover {
+    background: purple;
+}
+    </style>
+
+  </head>
+
+  <body>
+    <!--bem: Блок__элемент -- Модификатор-->
+
+
+    <div class="card">
+
+        <div class="card__header">
+            <h2 class="card_title">Ivan ivanov</h2>
+            <img clas= "card__avatar"src="https://via.placeholder.com/48
+            " alt="" />
+            
+        </div>
+
+            <p class="card__message card__message--green">
+            Lorem ipsum dolor sit amet.
+            </p>
+            <p class="card__date">
+                01-01-2020
+            </p>
+    </div>
+  </body>
+</html>
